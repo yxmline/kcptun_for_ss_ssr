@@ -735,7 +735,7 @@ install_kcptun_for_ss_ssr(){
     if [[ "${ssrr_installed_flag}" == "false" && "${clang_action}" =~ ^[Ii]|[Ii][Nn]|[Ii][Nn][Ss][Tt][Aa][Ll][Ll]|-[Ii]|--[Ii]$ ]] || [[ "${ssrr_installed_flag}" == "true" && "${ssrr_update_flag}" == "true" && "${clang_action}" =~ ^[Uu]|[Uu][Pp][Dd][Aa][Tt][Ee]|-[Uu]|--[Uu]|[Uu][Pp]|-[Uu][Pp]|--[Uu][Pp]$ ]]; then
         cd ${cur_dir}
         unzip -qo ssrr.zip
-        mv shadowsocksr-akkariiin-master/* /usr/local/shadowsocksrr/
+        mv shadowsocksr-akkariiin-dev/* /usr/local/shadowsocksrr/
         if [ -x /usr/local/shadowsocksrr/shadowsocks/server.py ] && [ -s /usr/local/shadowsocksrr/shadowsocks/__init__.py ]; then
             chmod +x /etc/init.d/ssrr
             if check_sys packageManager yum; then
