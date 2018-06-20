@@ -14,7 +14,7 @@ export SS_LIBEV_YUM_INIT="https://raw.githubusercontent.com/onekeyshell/kcptun_f
 export SS_LIBEV_APT_INIT="https://raw.githubusercontent.com/onekeyshell/kcptun_for_ss_ssr/master/ss_libev_apt.init"
 # SSR
 #export SSR_VER=3.3.2
-export SSR_VER=$(wget --no-check-certificate -qO- https://raw.githubusercontent.com/onekeyshell/shadowsocksr/manyuser/shadowsocks/version.py | grep return | cut -d\' -f2 | awk '{print $1}')
+export SSR_VER=$(wget --no-check-certificate -qO- https://raw.githubusercontent.com/shadowsocksrr/shadowsocksr/manyuser/shadowsocks/version.py | grep return | cut -d\' -f2 | awk '{print $1}')
 export SSR_LINK="https://github.com/onekeyshell/shadowsocksr/archive/manyuser.zip"
 export SSR_YUM_INIT="https://raw.githubusercontent.com/onekeyshell/kcptun_for_ss_ssr/master/ssr.init"
 export SSR_APT_INIT="https://raw.githubusercontent.com/onekeyshell/kcptun_for_ss_ssr/master/ssr_apt.init"
